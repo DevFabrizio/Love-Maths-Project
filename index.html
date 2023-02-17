@@ -12,11 +12,34 @@
 </head>
 <body>
     <h1 class="heading">
+        <img src="assets/images/calculator.png" alt="all the common operands arranged in a cross pattern">
         Love Maths
     </h1>
 
     <div class="game-area">
-        
+        <div class="control-area">
+            <button class="btn btn-big btn-green">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="btn btn-big btn-blue">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <button class="btn btn-big btn-orange">
+                <i class="fa-solid fa-divide"></i>
+            </button>
+            <button class="btn btn-big btn-red">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="question-area">
+                <span id="operand1">0</span>
+                <span id="operator">x</span>
+                <span id="operand2">0</span>
+                <span>=</span>
+                <p class="answer-message">Enter Answer:</p>
+                <input type="number" id="answer-box">
+            </div>
+            <button class="btn btn-gray">Submit Answer</button>
+        </div>
     </div>
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
@@ -24,6 +47,6 @@
     </div>
 
     <script src="assets/js/script.js"></script>
-    
+    <script src="https://kit.fontawesome.com/2171291146.js" crossorigin="anonymous"></script>
 </body>
 </html>
